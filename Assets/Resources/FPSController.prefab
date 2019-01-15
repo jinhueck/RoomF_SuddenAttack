@@ -61,9 +61,10 @@ GameObject:
   - component: {fileID: 114144281302464646}
   - component: {fileID: 114661423032080980}
   - component: {fileID: 114824493720755872}
+  - component: {fileID: 114931618913178274}
   m_Layer: 0
   m_Name: FPSController
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -329,6 +330,7 @@ MonoBehaviour:
   ownershipTransfer: 0
   ObservedComponents:
   - {fileID: 114661423032080980}
+  - {fileID: 114824493720755872}
   ObservedComponentsFoldoutOpen: 1
   viewIdField: 0
   instantiationId: -1
@@ -548,6 +550,20 @@ MonoBehaviour:
   playerCamera: {fileID: 4363577843976340}
   playerControlScripts:
   - {fileID: 114590587849982794}
+  playerHealth: 100
+--- !u!114 &114931618913178274
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1942345426764084}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24e64df2aab593142bbde79bd3651060, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  shootPoint: {fileID: 4363577843976340}
+  damage: 25
 --- !u!124 &124857966153459576
 Behaviour:
   m_ObjectHideFlags: 1
